@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  output: 'export',
+  trailingSlash: true,
   images: {
-    domains: ['images.unsplash.com'],
+    unoptimized: true,
   },
   async redirects() {
     return [
